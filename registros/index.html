@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+     <!--firebase-->
+     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+     <div class="bg-image" style="background-image: url('https://wallpaperaccess.com/full/1155052.jpg');height: 100vh">
+
+
+    <title>REGISTRO</title>
+
+
+  </head>
+  <body>
+    <h1></h1>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+      
+     
+     <div class="text-center" > 
+       <h2>Formulario de registro</h2>
+       
+
+    
+        
+      <p>
+      <input  type="text" size="100" maxlength="110" id="nombre" placeholder="Ingresar nombre" name="nombre" > 
+       </p>
+
+       <input type="text" size="100" maxlength="110" id="apellido" placeholder="Ingresa tu apellido" name="apellido"> <br>
+       <br>
+
+       <input type="text" size="100" maxlength="110" id="Nacimiento" placeholder="Ingrese tu edad" name="edad"> <br>
+       <br>
+
+       <input type="text" size="100" maxlength="110" id="Curp" placeholder="Ingrese tu curp" name="Curp"> <br>
+       <br>
+
+       <input type="text" size="100" maxlength="110" id="Domicilio"  placeholder="Ingrese tu domicilio" name="Domicilio"> <br>
+       <br>
+
+       <input type="text" size="100" maxlength="110"  id="Municipio" placeholder="Ingres tu municipio" name="Municipio"> <br>
+       <br>
+       
+       <button class="btn btn-primary" onclick="agregar()" id="button">Agregar</button>
+      
+     </div>
+     
+
+     
+     <table class="table my-2"> 
+     <thead>
+       <tr>
+         
+         <th scope="col" class="btn-danger">id</th>
+         <th scope="col" class="btn-danger">Nombre</th>
+         <th scope="col" class="btn-danger">Apellido</th>
+         <th scope="col" class="btn-danger">Nacimiento</th>
+         <th scope="col" class="btn-danger">Curp</th>
+         <th scope="col" class="btn-danger">Domicilio</th>
+         <th scope="col" class="btn-danger">Municipio</th>
+         <th scope="col">Eliminar</th>
+         <th scope="col">Editar</th>
+
+
+         
+       </tr>
+     </thead>  
+       
+        <tbody id="tabla">
+          
+        </tbody>
+     </table>
+  
+   <!--scrip para inicializar FIREBASE-->
+    <script src="app.js"></script>
+  </div>
+  
+
+
+
+  </body>
+</html>
